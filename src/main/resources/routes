@@ -1,5 +1,9 @@
 # Routes
 # This file defines all application routes (Higher priority routes first)
-# ~~~~
 
-GET     /                           com.example.file.download.controllers.LandingController.index
+# Serve index page from public directory
+GET     /                             com.example.file.download.controllers.FrontendController.index()
+GET     /download              com.example.file.download.controllers.LandingController.index()
+
+# Serve static assets under public directory
+GET     /*file                      com.example.file.download.controllers.FrontendController.assetOrDefault(file)

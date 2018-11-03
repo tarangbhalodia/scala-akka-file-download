@@ -4,4 +4,5 @@ object Dependencies {
   lazy val playJsonExtensionVersion = "0.14.0"
   lazy val scalaTestPlusPlayVersion = "3.1.2"
   lazy val alpAkkaVersion = "1.0-M1"
+  lazy val commonsIOVersion = "2.6"
 }

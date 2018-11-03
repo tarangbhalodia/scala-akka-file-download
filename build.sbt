@@ -7,16 +7,14 @@ scalaVersion := "2.12.7"
 
 libraryDependencies ++= Seq(
   guice,
-  "com.typesafe.akka" %% "akka-actor" % akkaVersion ,
-  "com.typesafe.akka" %% "akka-testkit" % akkaVersion ,
-  "ai.x" %% "play-json-extensions" % playJsonExtensionVersion exclude("org.scala-lang", "scala-compiler"),
-  "org.scalatestplus.play" %% "scalatestplus-play" % scalaTestPlusPlayVersion % Test,
-)
-
-libraryDependencies += "com.typesafe.akka" %% "akka-http" % akkaHttpVersion
-libraryDependencies ++= Seq(
+  "com.typesafe.akka" %% "akka-actor" % akkaVersion,
+  "com.typesafe.akka" %% "akka-testkit" % akkaVersion,
+  "com.typesafe.akka" %% "akka-http" % akkaHttpVersion,
   "com.lightbend.akka" %% "akka-stream-alpakka-file" % alpAkkaVersion,
-  "com.lightbend.akka" %% "akka-stream-alpakka-ftp" % alpAkkaVersion
+  "com.lightbend.akka" %% "akka-stream-alpakka-ftp" % alpAkkaVersion,
+  "ai.x" %% "play-json-extensions" % playJsonExtensionVersion exclude ("org.scala-lang", "scala-compiler"),
+  "commons-io" % "commons-io" % commonsIOVersion,
+  "org.scalatestplus.play" %% "scalatestplus-play" % scalaTestPlusPlayVersion % Test,
 )
 
 enablePlugins(PlayScala)
