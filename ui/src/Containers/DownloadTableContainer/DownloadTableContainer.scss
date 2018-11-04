@@ -1,0 +1,24 @@
+.mainContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  flex-direction: row;
+  justify-content: flex-start;
+  font-weight: bold;
+}
+
+.tableContainer {
+  margin-top: 24px;
+}
+
+.statusMainText {
+  font-size: 18px;
+}
+
+.statusSubText {
+  margin-top: 8px;
+  font-size: 14px;
+}

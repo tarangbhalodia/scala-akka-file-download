@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex: 1;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.inputText {
+  width: 60%;
+  height: 24px;
+  display: flex;
+  margin-top: 48px;
+  border: solid 1px grey;
+}
+
+.tableContainer {
+  display: flex;
+  width: 70%;
+  margin-top: 32px;
+}

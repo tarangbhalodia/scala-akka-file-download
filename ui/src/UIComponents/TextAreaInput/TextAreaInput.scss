@@ -1,0 +1,63 @@
+@import "~UIComponents/CommonStyles/colors";
+@import "~UIComponents/CommonStyles/typography";
+
+$borderColor: $strokeTwo;
+
+.container {
+  display: flex;
+  flex: 1;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.inputText {
+  width: 100%;
+  border: 1px solid $borderColor;
+  resize: none;
+  outline: none;
+  padding: 8px;
+  background-color: inherit;
+}
+.subText {
+  margin: 8px 0;
+  color: $iron;
+  font-size: 1.3rem;
+  @include regular-font;
+}
+.labelContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.labelHelper {
+  justify-content: center;
+  fill: $blue;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.inputTextDisable {
+  composes: inputText;
+  border: none;
+  padding: 0px;
+}
+.inputLabel {
+  @include medium-font;
+  font-size: 1.6rem;
+  color: black;
+  letter-spacing: 0.02rem;
+}
+.error {
+  display: flex;
+  background-color: rgba($yellow, 0.1);
+  border-color: $yellow;
+}
+
+.inputLength {
+  display: flex;
+  flex-grow: 0;
+  font-size: 1.4rem;
+  margin-top: 6px;
+  height: 16px;
+  align-self: flex-end;
+}
